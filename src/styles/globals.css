@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+Potential colours that go well with dark background
+White (#FFFFFF)
+Light gray (#D6D6D6)
+Light blue (#ADD8E6)
+Pale yellow (#FFFFE0)
+Light green (#90EE90)
+Light pink (#FFC0CB) 
+
+Blue
+Dodger blue (#1E90FF)
+Light blue (#87CEFA)
+Cornflower blue (#6495ED)
+Powder blue (#B0E0E6)
+
+Orange
+Coral (#FF7F50)
+Light salmon (#FFA07A)
+Peach (#FFDAB9)
+Papaya whip (#FFEFD5)
+*/
+
 @layer base {
   body{
     @apply bg-[#1f2937] text-[#ecf0f3] tracking-wide
@@ -24,6 +46,6 @@
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply shadow-xl rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
   }
 }
