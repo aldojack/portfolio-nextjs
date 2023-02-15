@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
@@ -7,32 +7,44 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false)
 
   function handleNav(){
     setNav(!nav)
   }
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if(window.scrollY >= 90){
+        setShadow(true);
+      } else{
+        setShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleShadow)
+  },[])
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100] mt-4">
+    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] mt-4 bg-[#1f2937]' : 'fixed w-full h-20 z-[100] mt-4'}>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image src="/assets/navLogoAJ1.png" alt="" width="170" height="50" />
         <nav>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">Home</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+            <Link href="/#about">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">About</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+            <Link href="/#skills">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">Skills</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+            <Link href="/#projects">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">
                 Projects
               </li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+            <Link href="/#contact">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">
                 Contact
               </li>
             </Link>

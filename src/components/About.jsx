@@ -2,15 +2,15 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="w-full md:h-screem p-2 flex items-center py-16">
+    <main id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid md:grid-cols-3 gap-8">
         <div className="col-span-2 space-y-2">
           <p className="uppercase text-xl tracking-widest text-[#FF7F50]">
             About
           </p>
-          <h2 className="">Who I am</h2>
+          <h2>Who I am</h2>
           {/* Look into styling this like a commented out bit of code */}
-          <p className="">I am a developer.....</p>
+          <p>I am a developer.....</p>
           <p>
             As a soon-to-be honours BSc graduate in Web & Mobile Development, I
             have always had a passion for technology. From tweaking and
@@ -20,18 +20,6 @@ export default function About() {
             challenge of leveling up, and I am currently upskilling with Next.js
             while planning to delve into Typescript in the upcoming summer. With
             my love for technology and my dedication to improving my skills
-          </p>
-          <p>
-            During my studies, I have had the opportunity to gain experience
-            with a wide range of programming languages and frameworks, including
-            C++, C#, ASP.NET Razor, MySQL, PHP, Laravel, Java, AWS EC2, and
-            Apache web servers. I am also well-versed in JavaScript, jQuery,
-            React, Vue, MongoDB, Express, and Node. I am particularly proud of
-            some of the projects I have worked on, such as a music database
-            using SQLite and ASP.NET Razor, and a personal blog CMS using
-            Laravel, MySQL, and Tailwind. This project included advanced backend
-            features, such as user registration, login with username and
-            password, OAuth sign-in options, and admin authorisation.{" "}
           </p>
 
           <p>
@@ -54,6 +42,6 @@ export default function About() {
           <img src="/assets/profile-picture.jpg" className="rounded-xl h-full" />
         </div>
       </div>
-    </div>
+    </main>
   );
 }
