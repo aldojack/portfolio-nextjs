@@ -1,42 +1,58 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import {BsFillPersonLinesFill} from 'react-icons/bs'
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false)
-
-  function handleNav(){
-    setNav(!nav)
-  }
+  const [navBg, setNavBg] = useState('#1f2937')
+  const router = useRouter();
 
   useEffect(() => {
-    const handleShadow = () => {
-      if(window.scrollY >= 90){
-        setShadow(true);
+    if(
+      router.asPath === '/Property' || 
+      router.asPath === '/Crypto' || 
+      router.asPath === '/Netflix' || 
+      router.asPath === '/Twitch'
+      ){
+        setNavBg('transparent')
       } else{
-        setShadow(false);
+        setNavBg('#1f2937')
       }
-    };
-    window.addEventListener('scroll', handleShadow)
-  },[])
+  },[router])
+
+  function handleNav() {
+    setNav(!nav);
+  }
+
+  // bg-[#1f2937]
   return (
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100] mt-4 bg-[#1f2937]' : 'fixed w-full h-20 z-[100] mt-4'}>
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/assets/navLogoAJ1.png" alt="" width="170" height="50" />
+    <div style={{backgroundColor: `${navBg}`}}
+      className={"fixed top-0 w-full h-24 shadow-xl z-[100] pt-4"}
+    >
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
+        <Link href="/">
+          <Image src="/assets/navLogoAJ1.png" alt="" width="170" height="50" />
+        </Link>
         <nav>
           <ul className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">Home</li>
+            <Link href="/#home">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">
+                Home
+              </li>
             </Link>
             <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">
+                About
+              </li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">
+                Skills
+              </li>
             </Link>
             <Link href="/#projects">
               <li className="ml-10 text-sm uppercase hover:border-b hover:text-[#FF7F50] ease-in duration-300">
@@ -54,11 +70,26 @@ export default function Navbar() {
           </div>
         </nav>
       </div>
-      <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/80' : ''}>
-        <div className={nav ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#292a2a] p-10 ease-in duration-500" : "fixed left-[-100%] top-0 p-10 ease-in duration-500"}>
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/80" : ""
+        }
+      >
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#1f2937] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+          }
+        >
           <div className="flex w-full items-center justify-between">
+          <Link href="/">
             <Image src="/assets/navLogoAJ1.png" alt="" width="87" height="35" />
-            <div onClick={handleNav} className="rounded-full shadow-lg p-3 cursor-pointer bg-red-500 hover:bg-red-600">
+          </Link>
+            <div
+              onClick={handleNav}
+              className="rounded-full shadow-lg p-3 cursor-pointer bg-red-500 hover:bg-red-600"
+            >
               <AiOutlineClose />
             </div>
           </div>
@@ -67,20 +98,20 @@ export default function Navbar() {
           </div>
           <nav className="py-4 flex flex-col">
             <ul>
-              <Link href="/">
-                <li className="py-4 text-sm">Home</li>
+              <Link href="/#home">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Home</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">About</li>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">About</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Skills</li>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Skills</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Projects</li>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Projects</li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm">Contact</li>
+              <Link href="/#contact">
+                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Contact</li>
               </Link>
             </ul>
             <div className="pt-40">
