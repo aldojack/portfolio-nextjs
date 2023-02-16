@@ -2,15 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-  scroll-behavior: smooth;
-}
 
 .wrapper{
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
 }
 
 header, main, section{
@@ -61,6 +60,6 @@ Papaya whip (#FFEFD5)
   }
 
   button {
-    @apply shadow-xl rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply shadow-xl rounded-xl uppercase bg-[#FF7F50] hover:bg-[#f86029] focus:bg-[[#f86029]] text-black
   }
 }
