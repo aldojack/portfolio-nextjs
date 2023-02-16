@@ -4,14 +4,14 @@ export default function About() {
   return (
     <main id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid md:grid-cols-3 gap-8">
-        <div className="col-span-2 space-y-2">
+        <div className="col-span-2 space-y-2 px-6">
           <p className="uppercase text-xl tracking-widest text-[#FF7F50]">
             About
           </p>
           <h2>Who I am</h2>
           {/* Look into styling this like a commented out bit of code */}
-          <p>I am a developer.....</p>
-          <p>
+          <p className="text-[#546C33] bg-white w-fit pl-2 pr-4">// I am a developer.....</p>
+          <p className="py-4">
             As a soon-to-be honours BSc graduate in Web & Mobile Development, I
             have always had a passion for technology. From tweaking and
             experimenting with gadgets to exploring the endless possibilities of
@@ -22,7 +22,7 @@ export default function About() {
             my love for technology and my dedication to improving my skills
           </p>
 
-          <p>
+          <p className="py-4">
             Currently, I am working on three projects that are set to be
             completed by May. These projects include a full-stack application
             for a consultancy agency, which utilizes the MERN stack to provide
@@ -34,7 +34,7 @@ export default function About() {
             excited to continue developing my skills and taking on new
             challenges as I pursue a career in web and mobile development.
           </p>
-          <p className="underline cursor-pointer hover:text-[#FF7F50] font-bold ease-in duration-300">
+          <p className="underline cursor-pointer hover:text-[#FF7F50] font-bold ease-in duration-300 w-fit">
             Please check out my recent projects
           </p>
         </div>
