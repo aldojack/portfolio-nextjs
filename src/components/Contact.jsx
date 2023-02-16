@@ -5,34 +5,35 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
-import ContactImg from "/public/assets/contact.jpg";
+import ContactImg from "/public/assets/doggys.jpg";
 
 export default function Contact() {
   return (
     <section id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
+      <div className="max-w-[1240px] m-auto px-6 py-16 w-full">
         <p className="uppercase text-xl tracking-widest text-[#FF7F50]">
           Contact
         </p>
         <h2 className="py-4">Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-900 rounded-xl p-4">
-            <div className="lg:-p-4 h-full">
+            <div className="lg:-p-4 h-full flex flex-col justify-evenly items-center">
               <div>
                 <Image
                   src={ContactImg}
                   className="rounded-xl hover:scale-105 ease-in duration-300"
                   alt="contact logo"
+                  width="250"
                 />
               </div>
-              <div>
-                <h2>Name Here</h2>
-                <p>Frontend Dev</p>
-                <p>I am always intereted in more work</p>
+              <div className="py-2">
+                <h2>Alan Jack</h2>
+                <p>Developer <span className="text-xs">(and animal lover 🐶🐶)</span></p>
+                <p>Feel free to contact me</p>
               </div>
               <div>
-                <p className="uppercase">Connect with me</p>
-                <div className="flex items-center justify-between py-4">
+                <p className="uppercase text-center">Connect with me</p>
+                <div className="flex items-center justify-between py-4 gap-8">
                   <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
                     <FaLinkedinIn />
                   </div>
@@ -91,7 +92,7 @@ export default function Contact() {
                       rows="10"
                     />
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">Submit</button>
+                <button className="w-full p-4 mt-4">Submit</button>
               </form>
             </div>
           </div>

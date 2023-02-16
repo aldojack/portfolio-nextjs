@@ -5,14 +5,14 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 export default function Main() {
   return (
-    <header id="header" className="w-full h-screen text-center">
+    <header id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-wide text-[#D6D6D6]">
-            Lets build something together
+            Always developing
           </p>
           <h1 className="py-4">
-            Hi, I&apos;m{" "}
+            Welcome, I&apos;m{" "}
             <span className="text-[#FF7F50] font-extrabold underline underline-offset-4">
               Alan
             </span>
