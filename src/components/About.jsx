@@ -39,7 +39,7 @@ export default function About() {
           </p>
         </div>
         <div className="w-full h-3/4 m-auto shadow-xl hover:shadow-custom rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img src="/assets/profile-picture.jpg" className="rounded-xl h-full" />
+          <img src="/assets/profile-picture.jpg" className="rounded-xl h-full" alt="Picture of me in Denver with UFC belt"/>
         </div>
       </div>
     </main>
