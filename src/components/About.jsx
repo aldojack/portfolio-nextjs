@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -9,8 +10,7 @@ export default function About() {
             About
           </p>
           <h2>Who I am</h2>
-          {/* Look into styling this like a commented out bit of code */}
-          <p className="text-[#546C33] bg-white w-fit pl-2 pr-4">// I am a developer.....</p>
+          <p className="text-[#546C33] bg-white w-fit pl-2 pr-4">I am a developer.....</p>
           <p className="py-4">
             As a soon-to-be honours BSc graduate in Web & Mobile Development, I
             have always had a passion for technology. From tweaking and
@@ -39,7 +39,7 @@ export default function About() {
           </p>
         </div>
         <div className="w-full h-3/4 m-auto shadow-xl hover:shadow-custom rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <img src="/assets/profile-picture.jpg" className="rounded-xl h-full" alt="Picture of me in Denver with UFC belt"/>
+          <Image src="/assets/profile-picture.jpg " className="rounded-xl h-full" alt="Picture of me in Denver with UFC belt" width="550" height="900"/>
         </div>
       </div>
     </main>
