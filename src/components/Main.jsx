@@ -25,16 +25,28 @@ export default function Main() {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
+              <a
+                href="https://www.linkedin.com/in/alan-jack/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
+              <a
+                href="https://github.com/aldojack"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub/>
+              </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <AiOutlineMail className=" cursor-not-allowed"/>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
+              <BsFillPersonLinesFill className=" cursor-not-allowed"/>
             </div>
           </div>
         </div>

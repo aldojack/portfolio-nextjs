@@ -4,7 +4,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "/public/assets/doggys.jpg";
 
 export default function Contact() {
@@ -28,23 +28,38 @@ export default function Contact() {
               </div>
               <div className="py-2">
                 <h2>Alan Jack</h2>
-                <p>Developer <span className="text-xs">(and animal lover 🐶🐶)</span></p>
+                <p>
+                  Developer{" "}
+                  <span className="text-xs">(and animal lover 🐶🐶)</span>
+                </p>
                 <p>Feel free to contact me</p>
               </div>
               <div>
                 <p className="uppercase text-center">Connect with me</p>
                 <div className="flex items-center justify-between py-4 gap-8">
                   <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedinIn />
+                    <a
+                      href="https://www.linkedin.com/in/alan-jack/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaLinkedinIn />
+                    </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
+                    <a
+                      href="https://github.com/aldojack"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub />
+                    </a>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
+                    <AiOutlineMail className=" cursor-not-allowed"/>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsFillPersonLinesFill />
+                    <BsFillPersonLinesFill className=" cursor-not-allowed"/>
                   </div>
                 </div>
               </div>
@@ -98,11 +113,11 @@ export default function Contact() {
           </div> */}
         </div>
         <div className="flex justify-center py-12">
-        <Link href="/">
+          <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-                <HiOutlineChevronDoubleUp className="m-auto " size={30}/>
+              <HiOutlineChevronDoubleUp className="m-auto " size={30} />
             </div>
-        </Link>
+          </Link>
         </div>
       </div>
     </section>

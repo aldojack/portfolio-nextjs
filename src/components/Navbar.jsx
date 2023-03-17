@@ -8,21 +8,21 @@ import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
-  const [navBg, setNavBg] = useState('#1f2937')
+  const [navBg, setNavBg] = useState("#1f2937");
   const router = useRouter();
 
   useEffect(() => {
-    if(
-      router.asPath === '/Property' || 
-      router.asPath === '/Crypto' || 
-      router.asPath === '/Netflix' || 
-      router.asPath === '/Twitch'
-      ){
-        setNavBg('transparent')
-      } else{
-        setNavBg('#1f2937')
-      }
-  },[router])
+    if (
+      router.asPath === "/Property" ||
+      router.asPath === "/Crypto" ||
+      router.asPath === "/Netflix" ||
+      router.asPath === "/Twitch"
+    ) {
+      setNavBg("transparent");
+    } else {
+      setNavBg("#1f2937");
+    }
+  }, [router]);
 
   function handleNav() {
     setNav(!nav);
@@ -30,7 +30,8 @@ export default function Navbar() {
 
   // bg-[#1f2937]
   return (
-    <div style={{backgroundColor: `${navBg}`}}
+    <div
+      style={{ backgroundColor: `${navBg}` }}
       className={"fixed top-0 w-full h-24 shadow-xl z-[100] pt-4"}
     >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
@@ -83,9 +84,14 @@ export default function Navbar() {
           }
         >
           <div className="flex w-full items-center justify-between">
-          <Link href="/">
-            <Image src="/assets/navLogoAJ1.png" alt="" width="87" height="35" />
-          </Link>
+            <Link href="/">
+              <Image
+                src="/assets/navLogoAJ1.png"
+                alt=""
+                width="87"
+                height="35"
+              />
+            </Link>
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg p-3 cursor-pointer bg-red-500 hover:bg-red-600"
@@ -99,35 +105,72 @@ export default function Navbar() {
           <nav className="py-4 flex flex-col">
             <ul>
               <Link href="/#home">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Home</li>
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300"
+                >
+                  Home
+                </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">About</li>
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300"
+                >
+                  About
+                </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Skills</li>
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300"
+                >
+                  Skills
+                </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Projects</li>
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300"
+                >
+                  Projects
+                </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300">Contact</li>
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm hover:text-[#FF7F50] ease-in duration-300"
+                >
+                  Contact
+                </li>
               </Link>
             </ul>
             <div className="pt-40">
               <p className="tracking-widest text-[#FF7F50]">Lets Connect</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaLinkedinIn />
+                  <a
+                    href="https://www.linkedin.com/in/alan-jack/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaLinkedinIn />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <FaGithub />
+                  <a
+                    href="https://github.com/aldojack"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                  </a>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <AiOutlineMail />
+                  <AiOutlineMail className=" cursor-not-allowed"/>
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                  <BsFillPersonLinesFill />
+                  <BsFillPersonLinesFill className=" cursor-not-allowed"/>
                 </div>
               </div>
             </div>
