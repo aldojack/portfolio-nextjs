@@ -51,7 +51,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-900 rounded-xl lg:p-4">
+          {/* <div className="col-span-3 w-full h-auto shadow-xl shadow-gray-900 rounded-xl lg:p-4">
             <div className="p-4">
               <form>
                 <div className="grid md:grid-cols-2 gap-4 w-full py-2">
@@ -95,7 +95,7 @@ export default function Contact() {
                 <button className="w-full p-4 mt-4">Submit</button>
               </form>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex justify-center py-12">
         <Link href="/">

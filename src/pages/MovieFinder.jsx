@@ -17,8 +17,8 @@ export default function MovieFinder() {
           src={movieImg}
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2">
-          <h2 className="py-2">Property</h2>
-          <h3>ReactJS / Tailwind / Firebase</h3>
+          <h2 className="py-2">Movie Finder</h2>
+          <h3>HTML / CSS / Javascript</h3>
         </div>
       </div>
 
@@ -46,7 +46,7 @@ export default function MovieFinder() {
           </Link>
           
           <Link href="https://github.com/aldojack/Movie-Watchlist">
-            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8">GitHub Code</button>
           </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
@@ -55,11 +55,11 @@ export default function MovieFinder() {
             <div className="grid grid-cols-3 md:grid-cols-1">
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                React
+                HTML5
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                CSS3
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -67,15 +67,7 @@ export default function MovieFinder() {
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
-              </p>
-              <p className=" py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Google API
-              </p>
-              <p className=" py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Zillow API
+                Open Movie DB API
               </p>
             </div>
           </div>

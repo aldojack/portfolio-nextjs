@@ -19,7 +19,7 @@ export default function Quiz() {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2">
           <h2 className="py-2">Quiz</h2>
-          <h3>ReactJS / Tailwind / Firebase</h3>
+          <h3>ReactJS</h3>
         </div>
       </div>
 
@@ -47,7 +47,7 @@ export default function Quiz() {
           </Link>
 
           <Link href="https://github.com/aldojack/quiz-app">
-            <button className="px-8 py-2 mt-4 mr-8">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8">GitHub</button>
           </Link>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-900 rounded-xl p-4">
@@ -60,7 +60,7 @@ export default function Quiz() {
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Tailwind
+                CSS
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
@@ -68,15 +68,7 @@ export default function Quiz() {
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" />
-                Firebase
-              </p>
-              <p className=" py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Google API
-              </p>
-              <p className=" py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" />
-                Zillow API
+                Open Trivia DB API
               </p>
             </div>
           </div>
