@@ -113,7 +113,7 @@ export default function Contact() {
           </div> */}
         </div>
         <div className="flex justify-center py-12">
-          <Link href="/">
+          <Link href="#home">
             <div className="rounded-full shadow-lg shadow-gray-700 hover:shadow-custom p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="m-auto " size={30} />
             </div>
