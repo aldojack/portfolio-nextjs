@@ -13,9 +13,12 @@ export default function Home() {
     <div className="wrapper">
       <Head>
         <title>Alan Jack - Developer</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.alan-jack.co.uk" />
         <meta property="og:title" content="Alan Jack - Bsc Web & Mobile Developer" />
         <meta property="og:description" content="This is my portfolio website built with Next.js 13, showcasing my projects and skills in web development." />
-        <meta property="og:image" content="/skills/navLogoAJ.png" />
+        <meta property="og:image" content="https://www.alan-jack.co.uk/assets/navLogoAJ.png" />
+        <meta property="og:image:alt" content="A logo created using my initals" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/image.ico" />
       </Head>
