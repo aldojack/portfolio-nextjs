@@ -31,22 +31,22 @@ export default function Projects() {
             projectUrl="/Quiz"
           />
           <ProjectItem
-            title="Coming Soon"
+            title="Delivery App"
             description="Progressive Web Application using React, Tailwind and Camera and Location APIs"
             backgroundImg={DeliveryLogo}
-            projectUrl="/"
+            projectUrl="/Delivery"
           />
           <ProjectItem
-            title="Coming Soon"
+            title="Honours Research"
             description="Honours Research tasked to develop two applications in React + Vue and comparing performance using Google Lighthouse"
             backgroundImg={HonsImg}
-            projectUrl="/"
+            projectUrl="/Hons"
           />
           <ProjectItem
-            title="Coming Soon"
+            title="Mental Health Blog"
             description="CMS mental health blog website using Laravel"
             backgroundImg={LaravelImg}
-            projectUrl="/"
+            projectUrl="/LaravelBlog"
           />
           <ProjectItem
             title="Coming Soon"

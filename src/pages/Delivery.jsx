@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import quizImg from "/public/assets/projects/quiz.jpg";
+import DeliveryLogo from "/public/assets/projects/delivery-logo.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-export default function Quiz() {
+export default function Delivery() {
   return (
     <div className="w-full">
       <div className="w-screen h-[30vh] lg:h-[40vh] relative">
@@ -13,13 +13,13 @@ export default function Quiz() {
           className="absolute z-1"
           layout="fill"
           alt=""
-          src={quizImg}
+          src={DeliveryLogo}
           style={{objectFit: "cover"}}
           priority
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] z-10 p-2">
-          <h2 className="py-2">Quiz</h2>
-          <h3>ReactJS</h3>
+          <h2 className="py-2">Delivery App</h2>
+          <h3>ReactJS / Camera API / Geolocation API</h3>
         </div>
       </div>
 
@@ -29,20 +29,21 @@ export default function Quiz() {
             Project
           </p>
           <h2>Overview</h2>
-          <div className=" space-y-4">
-          <p>
-          The Quiz App project is a web application built using React and JSX that allows users to take a multiple-choice quiz on a variety of topics with a choice of difficulty. The project features a clean and user-friendly interface, with a landing page that provides an overview of the quiz and a button to begin the quiz.</p>
-          
-          <p>The quiz questions and answer choices are dynamically generated using the opentdb API, which provides a wealth of questions on a variety of topics. Once the user starts the quiz, they are presented with a series of questions, each with four possible answers. Users can select one answer for each question, and they are not able to change their answer once it has been submitted. After answering all of the questions, users are presented with a summary of their results, including the number of questions answered correctly and incorrectly, as well as their overall score as a percentage.</p>
-          
-          <p>One of the standout features of this project is its use of React and JSX to create reusable components that make it easy to manage and update the user interface. The code for this functionality is well-organized and easy to follow, making it a great example of how to build complex, interactive web applications using modern web development techniques.
-          </p>
+          <div>
+            <p className="bg-[#FF7F50] text-black">This is still a work in progress</p>
           </div>
-          <Link href="https://aldo-quiz.netlify.app/">
+          <div className="space-y-4">
+          <p>The Delivery App project is a React progressive web application that simulates the workflow of a delivery driver. The app utilises the browser&apos;s location and camera APIs to provide users with a seamless delivery experience. </p>
+          
+          <p>The application allows drivers to accept deliveries, navigate to the delivery location, and take a picture of the delivery location to confirm the delivery. The app is designed to work on both desktop and mobile devices, and  offer offline support to provide a smooth and reliable user experience.</p>
+          
+          <p>One of the standout features of the Delivery-App project is its use of location and camera APIs, which enable users to easily navigate to delivery locations and provide visual confirmation of deliveries. The code for this functionality is well-organised using reuseable components and easy to follow, making it a great example of how to use browser APIs to create powerful and an engaging progressive web application</p>
+          </div>
+          <Link href="https://pinpoint-delivery.netlify.app/">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
           </Link>
 
-          <Link href="https://github.com/aldojack/quiz-app">
+          <Link href="https://github.com/aldojack/Delivery-App">
             <button className="px-8 py-2 mt-4 mr-8">GitHub</button>
           </Link>
         </div>
@@ -56,7 +57,7 @@ export default function Quiz() {
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1 text-[#FF7F50]" />
-                CSS
+                Tailwind
               </p>
               <p className=" py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1 text-[#FF7F50]" />
