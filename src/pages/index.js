@@ -13,7 +13,9 @@ export default function Home() {
     <div className="wrapper">
       <Head>
         <title>Alan Jack - Developer</title>
-        <meta name="description" content="This is my portfolio website built with Next.js, showcasing my projects and skills in web development." />
+        <meta property="og:title" content="Alan Jack - Bsc Web & Mobile Developer" />
+        <meta property="og:description" content="This is my portfolio website built with Next.js 13, showcasing my projects and skills in web development." />
+        <meta property="og:image" content="/skills/navLogoAJ.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/image.ico" />
       </Head>
