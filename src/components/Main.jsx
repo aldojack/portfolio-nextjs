@@ -18,11 +18,17 @@ export default function Main() {
             </span>
           </h1>
           <h1 className="py-4">A Web & Mobile Developer</h1>
-          <p className="py-4 text-[#D6D6D6] max-w-[70%] m-auto">
-            I&apos;m a Web & Mobile developer with a particular focus on
-            Javascript Technlogies. My current focus is using Next.js to build
-            React applications using Tailwind CSS for styling
-          </p>
+          <div className="text-[#D6D6D6] max-w-[70%] m-auto space-y-4">
+            <p>
+              I&apos;m a Web & Mobile developer with a particular focus on
+              Javascript Technlogies. My current focus is using Next.js to build
+              React applications using Tailwind CSS for styling
+            </p>
+
+            <p>
+            This project was developed using Next.js and and hosted using AWS Amplify
+            </p>
+          </div>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
               <a
@@ -39,14 +45,14 @@ export default function Main() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FaGithub/>
+                <FaGithub />
               </a>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail className=" cursor-not-allowed"/>
+              <AiOutlineMail className=" cursor-not-allowed" />
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 hover:shadow-custom p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill className=" cursor-not-allowed"/>
+              <BsFillPersonLinesFill className=" cursor-not-allowed" />
             </div>
           </div>
         </div>

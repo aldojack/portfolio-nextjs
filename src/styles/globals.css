@@ -12,10 +12,6 @@
 
 }
 
-header, main, section{
-  scroll-snap-align: start center;
-}
-
 /* 
 Potential colours that go well with dark background
 White (#FFFFFF)
