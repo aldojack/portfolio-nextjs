@@ -44,15 +44,15 @@ export default function Projects() {
           />
           <ProjectItem
             title="Mental Health Blog"
-            description="CMS mental health blog website using Laravel"
+            description="CMS mental health blog website using Laravel (Demo coming soon)"
             backgroundImg={LaravelImg}
             projectUrl="/LaravelBlog"
           />
           <ProjectItem
-            title="Coming Soon"
-            description="Full Stack MERN project designed for a tech consultancy and helping customer choose a career in tech"
+            title="Find Your Perfect Pathway"
+            description="Full Stack MERN project designed for a tech consultancy and helping customer choose a career in tech (Demo coming soon)"
             backgroundImg={MernImg}
-            projectUrl="/"
+            projectUrl="/Mern"
           />
         </div>
       </div>
